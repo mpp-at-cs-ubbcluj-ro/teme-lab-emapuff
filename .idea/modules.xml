@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/lab2activity.iml" filepath="$PROJECT_DIR$/lab2activity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lab2activity.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lab2activity.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lab2activity.test.iml" filepath="$PROJECT_DIR$/.idea/modules/lab2activity.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/teme-lab-emapuff.iml" filepath="$PROJECT_DIR$/.idea/teme-lab-emapuff.iml" />
       <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
     </modules>
