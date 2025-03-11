@@ -9,7 +9,7 @@ public class MainBD {
 
         Properties props=new Properties();
         try {
-            props.load(new FileReader("lab3/src/main/resources/bd.config"));
+            props.load(new FileReader("C:\\Users\\emato\\IdeaProjects\\teme-lab-emapuff\\lab3\\bd.config"));
         } catch (IOException e) {
             System.out.println("Cannot find bd.config "+e);
         }

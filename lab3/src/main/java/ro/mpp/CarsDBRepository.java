@@ -134,7 +134,7 @@ public class CarsDBRepository implements CarRepository{
              ResultSet resultSet = stmt.executeQuery()) {
 
             while (resultSet.next()) {
-                String manufacturer = resultSet.getString("manufactor");
+                String manufacturer = resultSet.getString("manufacturer");
                 int year = resultSet.getInt("year");
                 String model = resultSet.getString("model");
 
