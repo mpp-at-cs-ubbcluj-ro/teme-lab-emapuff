@@ -1,0 +1,73 @@
+11 Mar 2025 16:30:38,311 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:C:UsersematoIdeaProjectsmpp_25cars.db} 
+11 Mar 2025 16:30:51,335 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:C:UsersematoIdeaProjectsmpp_25cars.db} 
+11 Mar 2025 16:43:38,302 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:C:UsersematoIdeaProjectsmpp_25cars.db} 
+11 Mar 2025 16:43:38,325 INFO  ro.mpp.CarsDBRepository 82 add - Adding a new car to the database: Id=0 Tesla Model S 2019
+11 Mar 2025 16:43:38,330 TRACE ro.mpp.JdbcUtils 48 getConnection - Enter
+11 Mar 2025 16:43:38,331 TRACE ro.mpp.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2025 16:43:38,331 INFO  ro.mpp.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:UsersematoIdeaProjectsmpp_25cars.db
+11 Mar 2025 16:43:38,332 INFO  ro.mpp.JdbcUtils 31 getNewConnection - user: null
+11 Mar 2025 16:43:38,332 INFO  ro.mpp.JdbcUtils 32 getNewConnection - pass: null
+11 Mar 2025 16:43:38,907 TRACE ro.mpp.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@865dd6)
+11 Mar 2025 16:43:38,918 ERROR ro.mpp.CarsDBRepository 98 add - Error adding a new car to the database
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Masini)
+	at org.sqlite.core.DB.newSQLException(DB.java:1030) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.DB.newSQLException(DB.java:1042) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.DB.throwex(DB.java:1007) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:137) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.DB.prepare(DB.java:257) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.CorePreparedStatement.<init>(CorePreparedStatement.java:45) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.<init>(JDBC3PreparedStatement.java:30) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.jdbc4.JDBC4PreparedStatement.<init>(JDBC4PreparedStatement.java:25) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.jdbc4.JDBC4Connection.prepareStatement(JDBC4Connection.java:35) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:241) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:205) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at ro.mpp.CarsDBRepository.add(CarsDBRepository.java:87) [main/:?]
+	at ro.mpp.CarsDBRepository.add(CarsDBRepository.java:11) [main/:?]
+	at ro.mpp.MainBD.main(MainBD.java:18) [main/:?]
+11 Mar 2025 16:43:38,937 INFO  ro.mpp.CarsDBRepository 127 findAll - Fetching all cars from database...
+11 Mar 2025 16:43:38,938 TRACE ro.mpp.JdbcUtils 48 getConnection - Enter
+11 Mar 2025 16:43:38,938 TRACE ro.mpp.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2025 16:43:38,939 INFO  ro.mpp.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:UsersematoIdeaProjectsmpp_25cars.db
+11 Mar 2025 16:43:38,940 INFO  ro.mpp.JdbcUtils 31 getNewConnection - user: null
+11 Mar 2025 16:43:38,940 INFO  ro.mpp.JdbcUtils 32 getNewConnection - pass: null
+11 Mar 2025 16:43:38,943 TRACE ro.mpp.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@51dcb805)
+11 Mar 2025 16:43:38,946 ERROR ro.mpp.CarsDBRepository 145 findAll - Error fetching cars from database
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Masini)
+	at org.sqlite.core.DB.newSQLException(DB.java:1030) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.DB.newSQLException(DB.java:1042) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.DB.throwex(DB.java:1007) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:137) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.DB.prepare(DB.java:257) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.CorePreparedStatement.<init>(CorePreparedStatement.java:45) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.<init>(JDBC3PreparedStatement.java:30) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.jdbc4.JDBC4PreparedStatement.<init>(JDBC4PreparedStatement.java:25) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.jdbc4.JDBC4Connection.prepareStatement(JDBC4Connection.java:35) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:241) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:205) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at ro.mpp.CarsDBRepository.findAll(CarsDBRepository.java:133) [main/:?]
+	at ro.mpp.MainBD.main(MainBD.java:20) [main/:?]
+11 Mar 2025 16:43:38,948 INFO  ro.mpp.CarsDBRepository 26 findByManufacturer - Fetching all cars from database from a manufactor...
+11 Mar 2025 16:43:38,949 TRACE ro.mpp.JdbcUtils 48 getConnection - Enter
+11 Mar 2025 16:43:38,949 TRACE ro.mpp.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2025 16:43:38,950 INFO  ro.mpp.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:UsersematoIdeaProjectsmpp_25cars.db
+11 Mar 2025 16:43:38,950 INFO  ro.mpp.JdbcUtils 31 getNewConnection - user: null
+11 Mar 2025 16:43:38,951 INFO  ro.mpp.JdbcUtils 32 getNewConnection - pass: null
+11 Mar 2025 16:43:38,953 TRACE ro.mpp.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@66498326)
+11 Mar 2025 16:43:38,955 ERROR ro.mpp.CarsDBRepository 45 findByManufacturer - Error fetching cars from database
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Masini)
+	at org.sqlite.core.DB.newSQLException(DB.java:1030) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.DB.newSQLException(DB.java:1042) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.DB.throwex(DB.java:1007) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:137) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.DB.prepare(DB.java:257) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.core.CorePreparedStatement.<init>(CorePreparedStatement.java:45) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.<init>(JDBC3PreparedStatement.java:30) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.jdbc4.JDBC4PreparedStatement.<init>(JDBC4PreparedStatement.java:25) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.jdbc4.JDBC4Connection.prepareStatement(JDBC4Connection.java:35) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:241) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:205) ~[sqlite-jdbc-3.36.0.3.jar:?]
+	at ro.mpp.CarsDBRepository.findByManufacturer(CarsDBRepository.java:31) [main/:?]
+	at ro.mpp.MainBD.main(MainBD.java:24) [main/:?]
